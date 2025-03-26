@@ -55,8 +55,9 @@ const home = {
   headline: <>Rimmi's portfolio</>,
   subline: (
     <>
-      Hello, I'm Rimmal, an A Levels student from <InlineCode>Lahore, Pakistan</InlineCode>, passionate about building
-      <br /> 3D models, designing websites, and tinkering with electronics.
+      I'm Rimmal, an A Level student from  <InlineCode>Lahore, Pakistan</InlineCode>, passionate about engineering, 
+      <br /> 3D modeling, web design, and electronics. From coding interactive projects to designing futuristic 
+      <br /> prototypes, I love bringing ideas to life!"
     </>
   ),
 };
