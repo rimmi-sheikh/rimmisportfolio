@@ -68,6 +68,8 @@ interface RootLayoutProps {
   children: React.ReactNode;
 }
 
+import { Analytics } from "@vercel/analytics/react"; // Import Vercel Analytics
+
 export default async function RootLayout({ children }: RootLayoutProps) {
   return (
     <Flex
@@ -91,6 +93,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
       )}
     >
       <ToastProvider>
+        <Analytics /> {/* Add Vercel Analytics */}
         <Column style={{ minHeight: "100vh" }} as="body" fillWidth margin="0" padding="0">
           <Background
             mask={{
