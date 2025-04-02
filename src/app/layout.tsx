@@ -1,6 +1,6 @@
 import "@/once-ui/styles/index.scss";
 import "@/once-ui/tokens/index.scss";
-import "spellbook.scss"; // Your custom styles
+import "./spellbook.scss"; // Your custom styles
 import classNames from "classnames";
 import { Footer, Header, RouteGuard } from "@/components";
 import { baseURL, effects, style } from "@/app/resources";
