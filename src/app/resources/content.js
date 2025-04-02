@@ -61,6 +61,14 @@ const home = {
       <br /> prototypes, I love bringing ideas to life! 👾
     </>
   ),
+
+  magicBook: {
+    image: "/images/enchanted-book.png",
+    alt: "Enchanted book",
+    hoverText: "Open the book",
+    width: 160,  // Slightly smaller for balance
+    height: 200
+  }
 };
 
 const about = {
