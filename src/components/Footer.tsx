@@ -24,7 +24,7 @@ export const Footer = () => {
         vertical="center"
       >
         <Text variant="body-default-s" onBackground="neutral-strong">
-          © {currentYear} Rimmi Sheikh. Do not redistribute—this isn't minecraft loot. 
+          © {currentYear} Rimmal Sheikh. Do not redistribute—this isn't minecraft loot. 
         </Text>
         <Flex gap="16">
           {social.map(
