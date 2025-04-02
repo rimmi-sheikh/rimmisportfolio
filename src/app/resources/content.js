@@ -58,7 +58,7 @@ const home = {
       I'm Rimmal, an A Level student from  <InlineCode>Lahore, Pakistan</InlineCode>, passionate about engineering, 
       <br /> 3D modeling, web design, and electronics. 
       <br /> From coding interactive projects to designing futuristic 
-      <br /> prototypes, I love bringing ideas to life! 👾
+      <br /> prototypes, I love bringing ideas hehe to life! 👾
     </>
   ),
 

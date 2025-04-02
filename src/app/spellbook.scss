@@ -1,9 +1,10 @@
 /* ===== ENCHANTED BOOK STYLES ===== */
 .spellbook-container {
-    /* Positioning */
+    /* Positioning & Layout */
     position: relative;
     margin-left: 2rem;
     cursor: pointer;
+    flex-shrink: 0; /* Prevents squishing */
     
     /* Sizing */
     --book-width: 180px;
@@ -14,33 +15,53 @@
     /* Magic Colors */
     --enchantment-color: #9370DB;
     --enchantment-glow: 0 0 15px var(--enchantment-color);
-  }
-  
-  .spellbook {
+    
     /* Book Appearance */
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    image-rendering: crisp-edges;
-    border-radius: 4px 12px 12px 4px; /* Book-like shape */
-    
-    /* Effects */
-    transition: all 0.3s ease;
-    filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.2));
-    
-    /* Glint Animation */
-    position: relative;
-    overflow: hidden;
-  }
+    .spellbook {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      image-rendering: crisp-edges;
+      border-radius: 4px 12px 12px 4px;
+      transition: all 0.3s ease;
+      filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.2));
+      position: relative;
+      overflow: hidden;
+      
+      /* Glint Effect */
+      &::after {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(
+          45deg, 
+          transparent 25%,
+          rgba(255,255,255,0.5) 50%,
+          transparent 75%
+        );
+        transform: rotate(45deg);
+        opacity: 0;
+      }
+    }
   
-  /* Hover Effects */
-  .spellbook-container:hover .spellbook {
-    animation: float 2s ease-in-out infinite;
-    filter: drop-shadow(var(--enchantment-glow));
-  }
-  
-  .spellbook-container:hover .magic-particles {
-    opacity: 1;
+    /* Hover Effects */
+    &:hover {
+      .spellbook {
+        animation: float 2s ease-in-out infinite;
+        filter: drop-shadow(var(--enchantment-glow));
+        
+        &::after {
+          animation: glint 1.5s linear;
+        }
+      }
+      
+      .magic-particles, .hover-text {
+        opacity: 1;
+      }
+    }
   }
   
   /* Magic Particles */
@@ -51,12 +72,26 @@
     width: 100%;
     height: 100%;
     background: 
-      radial-gradient(circle at 30% 30%, #00BFFF88 2px, transparent 3px),
+      radial-gradient(circle at 30% 30%, rgba(0,191,255,0.5) 2px, transparent 3px),
       radial-gradient(circle at 70% 70%, var(--enchantment-color)88 2px, transparent 3px);
     background-size: 20px 20px;
     opacity: 0;
     transition: opacity 0.5s ease;
     z-index: -1;
+  }
+  
+  /* Tooltip Text */
+  .hover-text {
+    position: absolute;
+    bottom: -1.5rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--enchantment-color);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
   }
   
   /* Animations */
@@ -71,9 +106,20 @@
     20%, 100% { opacity: 0; }
   }
   
-  /* Mobile Responsive */
-  @media (max-width: 768px) {
-    .spellbook-container {
-      margin: 2rem auto !important;
+  /* ===== LAYOUT ===== */
+  .book-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    
+    @media (max-width: 768px) {
+      flex-direction: column;
+      
+      .spellbook-container {
+        margin: 2rem auto !important;
+        width: 140px !important;
+        height: 180px !important;
+      }
     }
   }
