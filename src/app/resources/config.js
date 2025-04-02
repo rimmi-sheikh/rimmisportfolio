@@ -16,11 +16,11 @@ const protectedRoutes = {
 
 const style = {
   theme: "dark", // dark | light
-  neutral: "slate", // sand | gray | slate
-  brand: "magenta", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-  accent: "indigo", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+  neutral: "custom", // sand | gray | slate
+  brand: "violet", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+  accent: "magenta", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
   solid: "contrast", // color | contrast
-  solidStyle: "plastic", // flat | plastic
+  solidStyle: "flat", // flat | plastic
   border: "rounded", // rounded | playful | conservative
   surface: "translucent", // filled | translucent
   transition: "all", // all | micro | macro

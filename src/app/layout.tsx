@@ -6,11 +6,12 @@ import classNames from "classnames";
 import { Footer, Header, RouteGuard } from "@/components";
 import { baseURL, effects, style } from "@/app/resources";
 
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import { Source_Code_Pro } from "next/font/google";
 
 import { person, home } from "@/app/resources/content";
 import { Background, Column, Flex, ToastProvider } from "@/once-ui/components";
+
 
 export async function generateMetadata() {
   return {
@@ -39,7 +40,7 @@ export async function generateMetadata() {
   };
 }
 
-const primary = Inter({
+const primary = Montserrat({
   variable: "--font-primary",
   subsets: ["latin"],
   display: "swap",
