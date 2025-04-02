@@ -1,17 +1,15 @@
 import "@/once-ui/styles/index.scss";
 import "@/once-ui/tokens/index.scss";
-
+import "spellbook.scss"; // Your custom styles
 import classNames from "classnames";
-
 import { Footer, Header, RouteGuard } from "@/components";
 import { baseURL, effects, style } from "@/app/resources";
-
 import { Montserrat } from "next/font/google";
 import { Source_Code_Pro } from "next/font/google";
-
 import { person, home } from "@/app/resources/content";
 import { Background, Column, Flex, ToastProvider } from "@/once-ui/components";
-
+import Image from "next/image";
+import { Analytics } from "@vercel/analytics/react";
 
 export async function generateMetadata() {
   return {
@@ -50,14 +48,8 @@ type FontConfig = {
   variable: string;
 };
 
-/*
-	Replace with code for secondary and tertiary fonts
-	from https://once-ui.com/customize
-*/
 const secondary: FontConfig | undefined = undefined;
 const tertiary: FontConfig | undefined = undefined;
-/*
- */
 
 const code = Source_Code_Pro({
   variable: "--font-code",
@@ -68,8 +60,6 @@ const code = Source_Code_Pro({
 interface RootLayoutProps {
   children: React.ReactNode;
 }
-
-import { Analytics } from "@vercel/analytics/react"; // Import Vercel Analytics
 
 export default async function RootLayout({ children }: RootLayoutProps) {
   return (
@@ -94,7 +84,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
       )}
     >
       <ToastProvider>
-        <Analytics /> {/* Add Vercel Analytics */}
+        <Analytics />
         <Column style={{ minHeight: "100vh" }} as="body" fillWidth margin="0" padding="0">
           <Background
             mask={{
@@ -155,7 +145,25 @@ export default async function RootLayout({ children }: RootLayoutProps) {
             flex={1}
           >
             <Flex horizontal="center" fillWidth minHeight="0">
-              <RouteGuard>{children}</RouteGuard>
+              {/* Book Layout Wrapper */}
+              <div className="book-layout">
+                <RouteGuard>{children}</RouteGuard>
+                
+                {/* Enchanted Book */}
+                {home.magicBook && (
+                  <div className="spellbook-container">
+                    <Image
+                      src={home.magicBook.image}
+                      alt={home.magicBook.alt}
+                      width={home.magicBook.width}
+                      height={home.magicBook.height}
+                      className="spellbook"
+                    />
+                    <div className="magic-particles"></div>
+                    <span className="hover-text">{home.magicBook.hoverText}</span>
+                  </div>
+                )}
+              </div>
             </Flex>
           </Flex>
           <Footer />
