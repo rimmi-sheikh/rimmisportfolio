@@ -48,28 +48,31 @@ const social = [
   },
 ];
 
-const home = {
+const home = { 
   label: "Home",
-  title: `rimmal  sheikh`,
+  title: `rimmal sheikh`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>tech crafter and ocassional miner</>,
+  headline: <>tech crafter and occasional miner</>,
   subline: (
-    <>
-      I'm Rimmal, an A Level student from  <InlineCode>Lahore, Pakistan</InlineCode>, passionate about engineering, 
-      <br /> 3D modeling, web design, and electronics. 
-      <br /> From coding interactive projects to designing futuristic 
-      <br /> prototypes, I love bringing ideas hehe to life! 👾
-    </>
+    <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
+      <div>
+        I'm Rimmal, an A Level student from <InlineCode>Lahore, Pakistan</InlineCode>, 
+        passionate about engineering, 
+        <br /> 3D modeling, web design, and electronics. 
+        <br /> From coding interactive projects to designing futuristic 
+        <br /> prototypes, I love bringing ideas hehe to life! 👾
+      </div>
+      <img 
+        src="/images/enchanted-book.png" 
+        alt="Minecraft Pickaxe"
+        width="250"
+        height="250"
+        style={{ objectFit: "contain" }}
+      />
+    </div>
   ),
-
-  magicBook: {
-    image: "/images/enchanted-book.png",
-    alt: "Enchanted book",
-    hoverText: "Open the book",
-    width: 160,  // Slightly smaller for balance
-    height: 200
-  }
 };
+
 
 const about = {
   label: "About",

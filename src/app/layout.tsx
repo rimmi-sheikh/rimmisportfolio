@@ -1,6 +1,6 @@
 import "@/once-ui/styles/index.scss";
 import "@/once-ui/tokens/index.scss";
-import "./spellbook.scss"; // Your custom styles
+import "./spellbook.scss";
 import classNames from "classnames";
 import { Footer, Header, RouteGuard } from "@/components";
 import { baseURL, effects, style } from "@/app/resources";
@@ -8,7 +8,6 @@ import { Montserrat } from "next/font/google";
 import { Source_Code_Pro } from "next/font/google";
 import { person, home } from "@/app/resources/content";
 import { Background, Column, Flex, ToastProvider } from "@/once-ui/components";
-import Image from "next/image";
 import { Analytics } from "@vercel/analytics/react";
 
 export async function generateMetadata() {
@@ -80,7 +79,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         primary.variable,
         secondary ? secondary.variable : "",
         tertiary ? tertiary.variable : "",
-        code.variable,
+        code.variable
       )}
     >
       <ToastProvider>
@@ -145,24 +144,9 @@ export default async function RootLayout({ children }: RootLayoutProps) {
             flex={1}
           >
             <Flex horizontal="center" fillWidth minHeight="0">
-              {/* Book Layout Wrapper */}
+              {/* RouteGuard ensures only accessible pages load */}
               <div className="book-layout">
                 <RouteGuard>{children}</RouteGuard>
-                
-                {/* Enchanted Book */}
-                {home.magicBook && (
-                  <div className="spellbook-container">
-                    <Image
-                      src={home.magicBook.image}
-                      alt={home.magicBook.alt}
-                      width={home.magicBook.width}
-                      height={home.magicBook.height}
-                      className="spellbook"
-                    />
-                    <div className="magic-particles"></div>
-                    <span className="hover-text">{home.magicBook.hoverText}</span>
-                  </div>
-                )}
               </div>
             </Flex>
           </Flex>
