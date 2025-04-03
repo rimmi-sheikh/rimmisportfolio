@@ -56,11 +56,7 @@ const home = {
   subline: (
     <div className="hero-container">
       <div className="intro-text">
-        I'm Rimmal, an A Level student from <InlineCode>Lahore, Pakistan</InlineCode>, 
-        passionate about engineering,
-        <br /> 3D modeling, web design, and electronics.
-        <br /> From coding interactive projects to designing futuristic
-        <br /> prototypes, I love bringing ideas to life! 👾
+        I'm Rimmal, an A Level student from <InlineCode> Lahore, Pakistan </InlineCode>, passionate about engineering, 3D modeling, web design, and electronics. From coding interactive projects to designing futuristic prototypes, I love bringing ideas to life! 👾
       </div>
       <div className="spellbook-container">
         <img 
