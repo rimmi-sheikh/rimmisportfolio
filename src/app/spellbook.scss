@@ -1,19 +1,18 @@
 /* ===== TEXT CONTAINER ===== */
 .intro-text {
-  max-width: 65ch;
-  padding-right: 3rem;
-  margin-top: 0.5rem; /* Adjust space under headline */
+  flex: 1;
+  max-width: 65ch; /* Keeps text width optimal */
+  padding: 0; /* Removes unwanted right padding */
+  text-align: left; /* Ensures alignment is flush */
 }
 
 /* ===== ENCHANTED BOOK STYLES ===== */
 .spellbook-container {
   position: relative;
-  --book-width: 300px;
-  --book-height: 300px;
-  width: var(--book-width);
-  height: var(--book-height);
-  margin-left: 10rem; /* Increased spacing to move it further right */
-  flex-shrink: 0;
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0; /* Prevents shrinking */
+  margin: 0; /* Remove extra margins */
 
   /* Magic Colors */
   --enchantment-color: #9370DB;
@@ -110,8 +109,9 @@
 /* ===== RESPONSIVE LAYOUT ===== */
 .hero-container {
   display: flex;
-  flex-direction: column; /* Stack elements in a column */
-  align-items: flex-start; /* Align everything to the left */
+  align-items: center; /* Keeps everything on the same vertical level */
+  justify-content: flex-start; /* Aligns content to the left */
+  gap: 2rem; /* Adds space between text and book */
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
