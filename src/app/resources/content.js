@@ -69,6 +69,7 @@ const home = {
           className="spellbook"
         />
          <div className="magic-particles"></div>
+         <span className="hover-text">Hover to reveal magic!</span>
       </div>
     </div>
   ),

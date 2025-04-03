@@ -8,11 +8,11 @@
 /* ===== ENCHANTED BOOK STYLES ===== */
 .spellbook-container {
   position: relative;
-  --book-width: 180px;
-  --book-height: 220px;
+  --book-width: 300px;
+  --book-height: 300px;
   width: var(--book-width);
   height: var(--book-height);
-  margin-left: 3rem; /* Space from text */
+  margin-left: 5rem; /* Space from text */
   flex-shrink: 0;
 
   /* Magic Colors */
