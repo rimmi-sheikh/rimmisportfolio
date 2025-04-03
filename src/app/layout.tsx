@@ -4,7 +4,7 @@ import "./spellbook.scss";
 import classNames from "classnames";
 import { Footer, Header, RouteGuard } from "@/components";
 import { baseURL, effects, style } from "@/app/resources";
-import { Montserrat } from "next/font/google";
+import { Montserrat, Silkscreen } from "next/font/google"; // Added Silkscreen import
 import { Source_Code_Pro } from "next/font/google";
 import { person, home } from "@/app/resources/content";
 import { Background, Column, Flex, ToastProvider } from "@/once-ui/components";
@@ -43,6 +43,14 @@ const primary = Montserrat({
   display: "swap",
 });
 
+// Add Silkscreen font configuration
+const silkscreen = Silkscreen({
+  weight: '400', // Regular weight
+  subsets: ['latin'],
+  variable: '--font-silkscreen',
+  display: 'swap',
+});
+
 type FontConfig = {
   variable: string;
 };
@@ -79,7 +87,8 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         primary.variable,
         secondary ? secondary.variable : "",
         tertiary ? tertiary.variable : "",
-        code.variable
+        code.variable,
+        silkscreen.variable // Added Silkscreen variable
       )}
     >
       <ToastProvider>
@@ -144,10 +153,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
             flex={1}
           >
             <Flex horizontal="center" fillWidth minHeight="0">
-              {/* RouteGuard ensures only accessible pages load */}
-              <div className="book-layout">
-                <RouteGuard>{children}</RouteGuard>
-              </div>
+              <RouteGuard>{children}</RouteGuard>
             </Flex>
           </Flex>
           <Footer />

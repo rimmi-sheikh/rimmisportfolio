@@ -1,3 +1,18 @@
+/* Apply Silkscreen to headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-silkscreen), var(--font-primary), sans-serif;
+  font-weight: 400; /* Silkscreen's regular weight */
+  letter-spacing: 0.5px;
+}
+
+/* Optional: Add Minecraft-style text shadow */
+.minecraft-heading {
+  text-shadow: 
+    2px 0 0 #000,
+    0 2px 0 #000,
+    2px 2px 0 #000;
+}
+
 /* ===== TEXT CONTAINER ===== */
 .intro-text {
   flex: 1;
