@@ -1,8 +1,8 @@
 /* ===== TEXT CONTAINER ===== */
 .intro-text {
-  flex: 1;
-  max-width: 65ch; /* Optimal text width */
+  max-width: 65ch;
   padding-right: 3rem;
+  margin-top: 0.5rem; /* Adjust space under headline */
 }
 
 /* ===== ENCHANTED BOOK STYLES ===== */
@@ -12,7 +12,7 @@
   --book-height: 300px;
   width: var(--book-width);
   height: var(--book-height);
-  margin-left: 5rem; /* Space from text */
+  margin-left: 10rem; /* Increased spacing to move it further right */
   flex-shrink: 0;
 
   /* Magic Colors */
@@ -110,7 +110,8 @@
 /* ===== RESPONSIVE LAYOUT ===== */
 .hero-container {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column; /* Stack elements in a column */
+  align-items: flex-start; /* Align everything to the left */
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
