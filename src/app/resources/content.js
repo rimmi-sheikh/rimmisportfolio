@@ -54,21 +54,22 @@ const home = {
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: <>tech crafter and occasional miner</>,
   subline: (
-    <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
-      <div>
+    <div className="hero-container">
+      <div className="intro-text">
         I'm Rimmal, an A Level student from <InlineCode>Lahore, Pakistan</InlineCode>, 
-        passionate about engineering, 
-        <br /> 3D modeling, web design, and electronics. 
-        <br /> From coding interactive projects to designing futuristic 
-        <br /> prototypes, I love bringing ideas hehe to life! 👾
+        passionate about engineering,
+        <br /> 3D modeling, web design, and electronics.
+        <br /> From coding interactive projects to designing futuristic
+        <br /> prototypes, I love bringing ideas to life! 👾
       </div>
-      <img 
-        src="/images/enchanted-book.png" 
-        alt="Minecraft Pickaxe"
-        width="250"
-        height="250"
-        style={{ objectFit: "contain" }}
-      />
+      <div className="spellbook-container">
+        <img 
+          src="/images/enchanted-book.png" 
+          alt="Enchanted Knowledge Book"
+          className="spellbook"
+        />
+         <div className="magic-particles"></div>
+      </div>
     </div>
   ),
 };
