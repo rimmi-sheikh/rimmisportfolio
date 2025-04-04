@@ -16,10 +16,11 @@ h1, h2, h3, h4, h5, h6 {
 /* ===== TEXT CONTAINER ===== */
 .intro-text {
   flex: 1;
-  max-width: 150ch; /* Keeps text width optimal */
+  max-width: 8-ch; /* Keeps text width optimal */
   padding: 0; /* Removes unwanted right padding */
   text-align: left; /* Ensures alignment is flush */
-  margin-left: 0;
+  margin: 0; /* Removes extra margins */
+  color: white; /* Text color */
 }
 
 /* ===== ENCHANTED BOOK STYLES ===== */
