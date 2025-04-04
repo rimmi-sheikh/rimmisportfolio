@@ -19,6 +19,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 150ch; /* Keeps text width optimal */
   padding: 0; /* Removes unwanted right padding */
   text-align: left; /* Ensures alignment is flush */
+  margin-left: 0;
 }
 
 /* ===== ENCHANTED BOOK STYLES ===== */
@@ -129,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
   gap: 4rem; /* Adds space between text and book */
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0;
 }
 
 @media (max-width: 768px) {
