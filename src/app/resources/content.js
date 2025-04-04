@@ -53,7 +53,7 @@ const home = {
   title: `rimmal sheikh`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: <>I do things. Sometimes they work.</>,
-  description: (
+  content: (
     <div className="hero-container">
       <div className="intro-text">
         I'm Rimmal—A Level student, tech tinkerer, and frequent victim of my own ideas. Based in 
