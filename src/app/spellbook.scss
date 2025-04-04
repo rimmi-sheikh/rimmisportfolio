@@ -5,12 +5,6 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.5px;
 }
 
-/* Add this to ensure description container flows properly */
-.description-container {
-  display: contents; /* Makes the div invisible to layout */
-}
-
-
 /* Optional: Add Minecraft-style text shadow */
 .minecraft-heading {
   text-shadow: 
@@ -22,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ===== TEXT CONTAINER ===== */
 .intro-text {
   flex: 1;
-  max-width: 80ch; /* Keeps text width optimal */
+  max-width: 150ch; /* Keeps text width optimal */
   padding: 0; /* Removes unwanted right padding */
   text-align: left; /* Ensures alignment is flush */
 }
@@ -132,11 +126,10 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center; /* Keeps everything on the same vertical level */
   justify-content: flex-start; /* Aligns content to the left */
-  gap: 15rem; /* Adds space between text and book */
+  gap: 4rem; /* Adds space between text and book */
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
-  margin-top: 2rem; /* Adds space above the hero section */
 }
 
 @media (max-width: 768px) {
@@ -154,30 +147,3 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 0;
   }
 }
-
-/* Add to your spellbook.scss */
-.page-content {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-.headline {
-  margin-bottom: 2rem;
-  font-family: var(--font-silkscreen);
-  color: #ffaa00;
-}
-
-.hero-container {
-  display: flex;
-  gap: 4rem;
-  align-items: flex-start;
-  
-  @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 2rem;
-  }
-}
-
-/* Keep all your existing spellbook styles */
