@@ -62,15 +62,6 @@ const home = {
         If it involves code, design, or an unnecessary amount of overcomplication, I’m probably in. 
         Welcome to my portfolio—try not to trip over the unfinished projects.
       </div>
-      <div className="spellbook-container">
-        <img 
-          src="/images/enchanted-book.png" 
-          alt="Enchanted Knowledge Book"
-          className="spellbook"
-        />
-         <div className="magic-particles"></div>
-         <span className="hover-text"> launched without debugging (just trust me on this one)</span>
-      </div>
     </div>
   ),
 };
