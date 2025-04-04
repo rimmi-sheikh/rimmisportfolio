@@ -52,7 +52,7 @@ const home = {
   label: "Home",
   title: `rimmal sheikh`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>tech crafter and occasional miner</>,
+  headline: <>I do things. Sometimes they work.</>,
   description: (
     <div className="hero-container">
       <div className="intro-text">
@@ -69,7 +69,7 @@ const home = {
           className="spellbook"
         />
          <div className="magic-particles"></div>
-         <span className="hover-text"> launched without debugging (trust me pls)</span>
+         <span className="hover-text"> launched without debugging (just trust me on this one)</span>
       </div>
     </div>
   ),
