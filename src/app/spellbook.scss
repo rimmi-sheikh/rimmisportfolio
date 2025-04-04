@@ -5,6 +5,12 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.5px;
 }
 
+/* Add this to ensure description container flows properly */
+.description-container {
+  display: contents; /* Makes the div invisible to layout */
+}
+
+
 /* Optional: Add Minecraft-style text shadow */
 .minecraft-heading {
   text-shadow: 
@@ -130,6 +136,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  margin-top: 2rem; /* Adds space above the hero section */
 }
 
 @media (max-width: 768px) {
