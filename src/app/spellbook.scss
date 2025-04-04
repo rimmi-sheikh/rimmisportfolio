@@ -16,11 +16,10 @@ h1, h2, h3, h4, h5, h6 {
 /* ===== TEXT CONTAINER ===== */
 .intro-text {
   flex: 1;
-  max-width: 8-ch; /* Keeps text width optimal */
+  max-width: 80ch; /* Keeps text width optimal */
   padding: 0; /* Removes unwanted right padding */
   text-align: left; /* Ensures alignment is flush */
   margin: 0; /* Removes extra margins */
-  color: white; /* Text color */
 }
 
 /* ===== ENCHANTED BOOK STYLES ===== */
@@ -128,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center; /* Keeps everything on the same vertical level */
   justify-content: flex-start; /* Aligns content to the left */
-  gap: 4rem; /* Adds space between text and book */
+  gap: 15rem; /* Adds space between text and book */
   max-width: 1200px;
   margin: 0 auto;
   padding: 0;
