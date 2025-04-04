@@ -65,7 +65,7 @@ const home = {
           className="spellbook"
         />
          <div className="magic-particles"></div>
-         <span className="hover-text"> launched without debugging (not a legitimate claim)</span>
+         <span className="hover-text">launched without debugging (not a legitimate claim)</span>
       </div>
     </div>
   ),
