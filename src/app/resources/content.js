@@ -51,26 +51,30 @@ const social = [
 const home = { 
   label: "Home",
   title: `rimmal sheikh`,
+  // Meta description (for SEO)
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>I do things. Sometimes they work.</>,
-  content: (
-    <div className="hero-container">
-      <div className="intro-text">
-        I'm Rimmal—A Level student, tech tinkerer, and frequent victim of my own ideas. Based in <InlineCode>Lahore, Pakistan</InlineCode>, I engineer things that occasionally function, 3D model concepts no one asked for, and negotiate with circuits like they owe me money. If it involves code, design, or an unnecessary amount of overcomplication, I’m probably in. Welcome to my portfolio—try not to trip over the unfinished projects.
+  
+  // Content for your page
+  heroContent: (
+    <>
+      <h1 className="headline">I do things. Sometimes they work.</h1>
+      <div className="hero-container">
+        <div className="intro-text">
+        I'm Rimmal—A Level student, tech tinkerer, and frequent victim of my own ideas. Based in <InlineCode>Lahore, Pakistan</InlineCode>, I engineer things that occasionally function, 3D model concepts no one asked for, and negotiate with circuits like they owe me money. If it involves code, design, or an unnecessary amount of overcomplication, I’m probably in. Welcome to my portfolio—try not to trip over the unfinished projects and half-baked ideas.
+        </div>
+        <div className="spellbook-container">
+          <img 
+            src="/images/enchanted-book.png" 
+            alt="Enchanted Knowledge Book"
+            className="spellbook"
+          />
+          <div className="magic-particles"></div>
+          <span className="hover-text">launched without debugging (do not trust this claim)</span>
+        </div>
       </div>
-      <div className="spellbook-container">
-        <img 
-          src="/images/enchanted-book.png" 
-          alt="Enchanted Knowledge Book"
-          className="spellbook"
-        />
-         <div className="magic-particles"></div>
-         <span className="hover-text"> launched without debugging (just trust me on this one)</span>
-      </div>
-    </div>
-  ),
+    </>
+  )
 };
-
 
 const about = {
   label: "About",

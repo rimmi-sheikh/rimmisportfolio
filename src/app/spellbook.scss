@@ -154,3 +154,30 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 0;
   }
 }
+
+/* Add to your spellbook.scss */
+.page-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.headline {
+  margin-bottom: 2rem;
+  font-family: var(--font-silkscreen);
+  color: #ffaa00;
+}
+
+.hero-container {
+  display: flex;
+  gap: 4rem;
+  align-items: flex-start;
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+/* Keep all your existing spellbook styles */
