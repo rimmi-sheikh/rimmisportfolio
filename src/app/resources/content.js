@@ -64,7 +64,7 @@ const home = {
 
 const about = {
   label: "About",
-  title: "About me",
+  title: "rimmi ~ about",
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
@@ -74,7 +74,7 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -82,10 +82,11 @@ const about = {
     title: "Introduction",
     description: (
       <>
-      Rimmal is an electrical engineering and environmental technology enthusiast,  
-      passionate about integrating hardware, AI, and sustainability.  
-      She focuses on developing innovative solutions, from air quality monitoring  
-      to flood detection systems, aiming for a greener, more resilient future.  
+      Rimmal is an engineering enthusiast with a passion for electrical systems, environmental technology, 
+      and a surprising fondness for spaghetti bridges. She merges hardware, AI, and sustainability to create 
+      impactful solutions—from air quality monitoring to flood detection systems. Whether she’s debugging code 
+      or building a car chassis from scratch, Rimmal’s work bridges the gap between practicality and ingenuity—
+      sometimes literally.
     </>
     ),
   },
@@ -94,41 +95,29 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "PYIMS (Pakistan Young Innovative Minds)",
+        timeframe: "Feb 2024 - Ongoing",
+        role: "Paid Web Development Intern",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Developed responsive web interfaces for PYIMS’s platform, increasing user accessibility by 25%.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Optimized front-end performance, reducing page load times by 35% through code refactoring.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Aliva Tech",
+        timeframe: "Sep - Oct 2023",
+        role: "Space Science Python Developer Intern",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Built Python tools for satellite trajectory analysis, cutting manual computation time by 40%.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Automated data pipelines for space mission datasets, improving team efficiency by 30%.
           </>,
         ],
         images: [],
@@ -140,12 +129,8 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Lahore Grammar School OPF Senior Girls",
+        description: <>Studying A-Levels in Computer Science, Physics, Mathematics, Chemistry, and English Language.</>,
       },
     ],
   },
@@ -154,36 +139,14 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Python",
+        description: <>Developed machine learning models for AQI prediction with 85% accuracy.</>,
+        images: [],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Blender & 3D Design",
+        description: <>Led 3D modeling for NASA-affiliated space settlement design competitions.</>,
+        images: [],
       },
     ],
   },
