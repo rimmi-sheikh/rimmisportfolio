@@ -6,7 +6,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "STEM Enthusiast & Tech Innovator",
+  role: "TechGirls Alumna • AI Researcher • Computational Modeler",
   avatar: "/images/avatar.jpg",
   location: "Asia/Karachi", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Urdu"], // optional: Leave the array empty if you don't want to display languages
@@ -154,14 +154,14 @@ const about = {
 
 const blog = {
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "rimmi ~ blog",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
 };
 
 const work = {
-  label: "Work",
+  label: "rimmi ~ work",
   title: "My projects",
   description: `Design and dev projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
@@ -169,10 +169,9 @@ const work = {
 };
 
 const gallery = {
-  label: "Gallery",
+  label: "rimmi ~ gallery",
   title: "My photo gallery",
   description: `A photo collection by ${person.name}`,
-  // Images from https://pexels.com
   images: [
     {
       src: "/images/gallery/img-01.jpg",
