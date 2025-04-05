@@ -55,7 +55,9 @@ const home = {
   headline: <>I do things. Sometimes they work.</>,
   subline: (
     <>
-      I'm Rimmal—A Level student, tech tinkerer, and frequent victim of my own ideas. Based in <InlineCode>Lahore, Pakistan</InlineCode>, I engineer things that occasionally function, 3D model concepts no one asked for, and negotiate with circuits like they owe me money. If it involves code, design, or an unnecessary amount of overcomplication, I’m probably in. Welcome to my portfolio—try not to trip over the unfinished projects or half-baked ideas. I promise, it’s all part of the plan. Or at least, that’s what I tell myself.
+      I'm Rimmal—A Level student, tech tinkerer, and frequent victim of my own ideas. Based in <InlineCode>Lahore, Pakistan</InlineCode>, I like <InlineCode>engineering</InlineCode> things that occasionally function, <InlineCode>3D model concepts</InlineCode> no one asked for, and negotiate with <InlineCode></InlineCode> like they owe me money. 
+      <br/> If it involves code, design, or an unnecessary amount of overcomplication, I’m probably in. 
+      <br/> Welcome to my portfolio—try not to trip over the unfinished projects or half-baked ideas. I promise, it’s all part of the plan. Or at least, that’s what I tell myself.
     </>
   ),
 };
