@@ -49,10 +49,10 @@ const social = [
 ];
 
 const home = { 
-  label: "Home",
-  title: `rimmal sheikh`,
+  label: "home",
+  title: `rimmis portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>tech crafter and occasional miner</>,
+  headline: <>I do things. Sometimes they work.</>,
   description: (
     <div className="hero-container">
       <div className="intro-text">
