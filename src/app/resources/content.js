@@ -71,8 +71,6 @@ const home = {
   ),
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
-
 const about = {
   label: "About",
   title: "About me",
