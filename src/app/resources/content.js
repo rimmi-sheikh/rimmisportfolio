@@ -55,7 +55,7 @@ const home = {
   headline: <>I do things. Sometimes they work.</>,
   subline: (
     <>
-      I'm Rimmal—A Level student, tech tinkerer, and frequent victim of my own ideas. Based in <InlineCode>Lahore, Pakistan</InlineCode>, I like <InlineCode>engineering</InlineCode> things that occasionally function, <InlineCode>3D model concepts</InlineCode> no one asked for, and negotiate with <InlineCode>circuits</InlineCode> like they owe me money. 
+      I'm <InlineCode>Rimmal</InlineCode>—A Level student, tech tinkerer, and frequent victim of my own ideas. Based in <InlineCode>Lahore, Pakistan</InlineCode>, I like <InlineCode>engineering</InlineCode> things that occasionally function, <InlineCode>3D model concepts</InlineCode> no one asked for, and negotiate with <InlineCode>circuits</InlineCode> like they owe me money. 
       <br/> If it involves code, design, or an unnecessary amount of overcomplication, I’m probably in. 
       <br/> <InlineCode>Welcome to my portfolio 👾</InlineCode>—try not to trip over the unfinished projects or half-baked ideas.
     </>
@@ -91,67 +91,94 @@ const about = {
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Work Experience",
     experiences: [
       {
-        company: "PYIMS (Pakistan Young Innovative Minds)",
-        timeframe: "Feb 2024 - Ongoing",
+        company: "Pakistan Young Innovative Minds (PYIMS)",
+        timeframe: "Feb 2024 – Present",
         role: "Paid Web Development Intern",
         achievements: [
-          <>
-            Developed responsive web interfaces for PYIMS’s platform, increasing user accessibility by 25%.
-          </>,
-          <>
-            Optimized front-end performance, reducing page load times by 35% through code refactoring.
-          </>,
+          <>Redesigned and implemented key sections of the PYIMS website using HTML, CSS, and JavaScript.</>,
+          <>Collaborated with the design team to align site UI with organizational branding and accessibility goals.</>,
+          <>Resolved site bugs and improved responsiveness across devices through regular QA and user feedback cycles.</>,
         ],
         images: [],
       },
       {
         company: "Aliva Tech",
-        timeframe: "Sep - Oct 2023",
+        timeframe: "Sep – Oct 2023",
         role: "Space Science Python Developer Intern",
         achievements: [
-          <>
-            Built Python tools for satellite trajectory analysis, cutting manual computation time by 40%.
-          </>,
-          <>
-            Automated data pipelines for space mission datasets, improving team efficiency by 30%.
-          </>,
+          <>Designed Python tools to simulate satellite orbits using orbital mechanics equations.</>,
+          <>Documented code and workflows for internal knowledge sharing on space mission data analysis.</>,
+          <>Researched and prototyped automated methods for space-related data processing.</>,
+        ],
+        images: [],
+      },
+      {
+        company: "TechGirls (U.S. Department of State Exchange Program)",
+        timeframe: "Jul – Aug 2023",
+        role: "Selected Participant & Project Lead",
+        achievements: [
+          <>Completed certification at Virginia Tech in Automated Systems Using Microprocessors (ASUM).</>,
+          <>Led a multicultural team to design a flood detection and mitigation system inspired by the 2022 Pakistan floods.</>,
+          <>Founded ‘Learn. Tinker. Innovate.’ to host Arduino and TinkerCAD workshops encouraging girls in STEM.</>,
+        ],
+        images: [],
+      },
+      {
+        company: "Remotasks",
+        timeframe: "2023",
+        role: "Freelance AI Contributor",
+        achievements: [
+          <>Labeled and annotated datasets for training machine learning models in natural language processing and computer vision.</>,
+          <>Contributed to enhancing AI training accuracy through consistent task QA and review.</>,
         ],
         images: [],
       },
     ],
   },
+  
   studies: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Studies",
     institutions: [
       {
         name: "Lahore Grammar School OPF Senior Girls",
-        description: <>Studying A-Levels in Computer Science, Physics, Mathematics, Chemistry, and English Language.</>,
+        description: <>Currently pursuing A-Levels in Computer Science, Physics, Mathematics, Chemistry, and English Language.</>,
       },
     ],
   },
+  
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Technical Skills",
     skills: [
       {
         title: "Python",
-        description: <>Developed machine learning models for AQI prediction with 85% accuracy.</>,
+        description: <>Built AQI prediction models and environmental monitoring tools; used for research and real-world air quality tracking.</>,
         images: [],
       },
       {
-        title: "Blender & 3D Design",
-        description: <>Led 3D modeling for NASA-affiliated space settlement design competitions.</>,
+        title: "3D Design (Blender, TinkerCAD)",
+        description: <>Designed models for NASA-affiliated space settlement contests, spaghetti bridges, and custom chassis prototypes.</>,
+        images: [],
+      },
+      {
+        title: "Arduino & Hardware",
+        description: <>Created sensor systems for air pollution and flood detection as part of CAP and internships.</>,
+        images: [],
+      },
+      {
+        title: "Web Development",
+        description: <>Developed responsive interfaces using HTML, CSS, JavaScript, and frameworks during internships and projects.</>,
         images: [],
       },
     ],
   },
 };
-
+  
 const blog = {
   label: "Blog",
   title: "rimmi | blog",
