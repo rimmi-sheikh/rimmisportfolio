@@ -54,19 +54,8 @@ const home = {
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: <>I do things. Sometimes they work.</>,
   description: (
-    <div className="hero-container">
-      <div className="intro-text">
-        I'm Rimmal, an A Level student from Lahore, Pakistan, passionate about engineering, 3D modeling, web design, and electronics. From coding interactive projects to designing futuristic prototypes, I love bringing ideas to life! 👾
-      </div>
-      <div className="spellbook-container">
-        <img 
-          src="/images/enchanted-book.png" 
-          alt="Enchanted Knowledge Book"
-          className="spellbook"
-        />
-         <div className="magic-particles"></div>
-         <span className="hover-text">launched without debugging (not a legitimate claim)</span>
-      </div>
+    <div className="intro-text">
+      Testing this in isolation.
     </div>
   ),
 };
