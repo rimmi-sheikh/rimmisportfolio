@@ -55,7 +55,7 @@ const home = {
   headline: <>I do things. Sometimes they work.</>,
   description: (
     <div className="intro-text">
-      Testing this in isolation.
+      Testing this seperately.
     </div>
   ),
 };
