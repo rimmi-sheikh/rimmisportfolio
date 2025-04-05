@@ -53,10 +53,11 @@ const home = {
   title: `rimmis portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: <>I do things. Sometimes they work.</>,
-  description: (
-    <div className="intro-text">
-      Testing this seperately.
-    </div>
+  subline: (
+    <>
+      I'm Rimmal, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
+      <br /> user experiences. After hours, I build my own projects.
+    </>
   ),
 };
 
