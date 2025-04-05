@@ -26,15 +26,16 @@ export default function MasonryGrid() {
       >
         {gallery.images.map((image, index) => (
           <SmartImage
-            priority={index < 10}
-            sizes="(max-width: 560px) 100vw, (max-width: 1024px) 50vw, (max-width: 1440px) 33vw, 25vw"
-            key={index}
-            radius="m"
-            aspectRatio={image.orientation === "horizontal" ? "16 / 9" : "9 / 16"}
-            src={image.src}
-            alt={image.alt}
-            className={styles.gridItem}
-          />
+          priority={index < 10}
+          sizes="(max-width: 560px) 100vw, (max-width: 1024px) 50vw, (max-width: 1440px) 33vw, 25vw"
+          key={index}
+          radius="m"
+          aspectRatio={image.orientation === "horizontal" ? "16 / 9" : "9 / 16"}
+          src={image.src}
+          alt={image.alt}
+          className={styles.gridItem}
+          style={{ width: "100%", height: "auto" }} // 🛠️ Force sizing here
+        />        
         ))}
       </Masonry>
     </div>
