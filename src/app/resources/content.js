@@ -56,7 +56,7 @@ const home = {
   description: (
     <div className="hero-container">
       <div className="intro-text">
-        I'm Rimmal, an A Level student from <InlineCode> Lahore, Pakistan </InlineCode>, passionate about engineering, 3D modeling, web design, and electronics. From coding interactive projects to designing futuristic prototypes, I love bringing ideas to life! 👾
+        I'm Rimmal, an A Level student from Lahore, Pakistan, passionate about engineering, 3D modeling, web design, and electronics. From coding interactive projects to designing futuristic prototypes, I love bringing ideas to life! 👾
       </div>
       <div className="spellbook-container">
         <img 
@@ -71,6 +71,7 @@ const home = {
   ),
 };
 
+export { person, social, newsletter, home, about, blog, work, gallery };
 
 const about = {
   label: "About",
