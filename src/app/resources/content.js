@@ -63,8 +63,8 @@ const home = {
 };
 
 const about = {
-  label: "About",
-  title: "rimmi ~ about",
+  label: "rimmi ~ about",
+  title: "ABout",
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
@@ -153,25 +153,25 @@ const about = {
 };
 
 const blog = {
-  label: "Blog",
-  title: "rimmi ~ blog",
+  label: "rimmi ~ blog",
+  title: "Blog",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
 };
 
 const work = {
-  label: "rimmi ~ work",
-  title: "My projects",
+  label: "Work",
+  title: "rimmi ~ work",
   description: `Design and dev projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
 };
 
 const gallery = {
-  label: "rimmi ~ gallery",
-  title: "My photo gallery",
-  description: `A photo collection by ${person.name}`,
+  label: "Gallery",
+  title: "rimmi ~ gallery",
+  headline: <>I take photos.</>,
   images: [
     {
       src: "/images/gallery/img-01.jpg",
