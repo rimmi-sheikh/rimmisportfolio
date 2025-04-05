@@ -11,30 +11,4 @@
 
 .gridItem {
     margin-bottom: var(--static-space-16);
-    width: 100%;              // <-- Ensure it fills the column
-    height: auto;             // <-- Let aspect ratio handle height
-    border-radius: 0.5rem;    // optional: cleaner visuals
-    object-fit: cover;        // ensures content doesn’t stretch weirdly
-  }  
-
-.galleryWrapper {
-    padding: 2rem;
-  }
-  
-  .galleryTitle {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .galleryHeadline {
-    font-size: 1.2rem;
-    color: #ffffff;
-    margin-bottom: 2rem;
-  }
-
-  .gridItem:hover {
-    transform: scale(1.03);
-    transition: transform 0.2s ease-in-out;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  }
-  
+}
