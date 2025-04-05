@@ -7,7 +7,7 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "TechGirls Alumna • AI Researcher • Computational Modeler",
-  avatar: "/images/avatar.jpg",
+  avatar: "/images/avatar.png",
   location: "Asia/Karachi", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Urdu"], // optional: Leave the array empty if you don't want to display languages
 };
@@ -74,7 +74,7 @@ const about = {
     display: true,
   },
   calendar: {
-    display: false,
+    display: true,
     link: "https://cal.com",
   },
   intro: {
@@ -106,19 +106,8 @@ const about = {
         images: [],
       },
       {
-        company: "Aliva Tech",
-        timeframe: "Sep – Oct 2023",
-        role: "Space Science Python Developer Intern",
-        achievements: [
-          <>Designed Python tools to simulate satellite orbits using orbital mechanics equations.</>,
-          <>Documented code and workflows for internal knowledge sharing on space mission data analysis.</>,
-          <>Researched and prototyped automated methods for space-related data processing.</>,
-        ],
-        images: [],
-      },
-      {
         company: "TechGirls (U.S. Department of State Exchange Program)",
-        timeframe: "Jul – Aug 2023",
+        timeframe: "Jul – Aug 2024",
         role: "Selected Participant & Project Lead",
         achievements: [
           <>Completed certification at Virginia Tech in Automated Systems Using Microprocessors (ASUM).</>,
@@ -128,12 +117,13 @@ const about = {
         images: [],
       },
       {
-        company: "Remotasks",
-        timeframe: "2023",
-        role: "Freelance AI Contributor",
+        company: "Aliva Tech",
+        timeframe: "Sep – Oct 2023",
+        role: "Space Science Python Developer Intern",
         achievements: [
-          <>Labeled and annotated datasets for training machine learning models in natural language processing and computer vision.</>,
-          <>Contributed to enhancing AI training accuracy through consistent task QA and review.</>,
+          <>Designed Python tools to simulate satellite orbits using orbital mechanics equations.</>,
+          <>Documented code and workflows for internal knowledge sharing on space mission data analysis.</>,
+          <>Researched and prototyped automated methods for space-related data processing.</>,
         ],
         images: [],
       },
@@ -177,7 +167,7 @@ const about = {
       },
     ],
   },
-};
+};  
   
 const blog = {
   label: "Blog",
