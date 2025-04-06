@@ -1,0 +1,54 @@
+---
+title: "How I Spent 5 Hours Debugging My Portfolio Just to Delete the Problem"
+publishedAt: "2025-04-06"
+summary: "Sometimes web development is less about writing perfect code and more about surrendering to the void and starting fresh. Here's the story of how one div container nearly broke me."
+tag: "Web Dev"
+---
+
+There’s something deeply humbling about web development. One moment you're feeling like the main character, aligning flex containers like a boss, and the next... your landing page text just vanishes into the HTML abyss.
+
+This was me. Mid-portfolio build. I’d been working on this shiny new personal website using good ol’ HTML, CSS, and JavaScript. You know—keeping it classic. Everything was going well until suddenly, the main text on my landing page decided to ghost me.
+
+**No error messages. No funky colors. Just… invisible.**
+
+So naturally, I spent the next **four to five hours** spiraling through the usual debugging rabbit hole:
+
+- Checked the `z-index` like 20 times  
+- Inspected everything in DevTools like a crime scene  
+- Tried changing font colors, sizes, even the font itself (just in case the font was feeling shy?)  
+- Removed and re-added the div  
+- Convinced myself it was a cosmic punishment for not using a framework
+
+Nothing. Nada. The text just refused to show.
+
+At some point, I gave up and rage-binged *Adolescence* on Netflix while questioning every life decision that brought me to this moment.
+
+---
+
+### 🌞 The Next Morning...
+
+I woke up, slightly less dramatic, and decided to just delete the entire div container.  
+Gone.  
+Goodbye.
+
+Then I added a single, plain `<h1>` tag with the same text inside it.
+
+**AND IT WORKED.**
+
+The website displayed the headline like it had never ghosted me in the first place. As if to say,  
+*“Oh, you meant that text. My bad.”*
+
+---
+
+### 🧠 What I Learned:
+
+- Sometimes it’s not about fixing the problem. It’s about nuking it from orbit.
+- Over-complicating layout containers is a trap I will 100% fall into again.
+- And most importantly: walking away and watching TV is a valid debugging strategy.  
+  (Seriously, the Netflix method might be my new favorite.)
+
+---
+
+So yeah. My portfolio looks great now. But just know: behind every clean line of code is a silent scream and one less div.
+
+Welcome to the real dev life.
