@@ -50,7 +50,7 @@ const social = [
 
 const home = { 
   label: "home",
-  title: `rimmis portfolio`,
+  title: `Rimmis Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: <>I do things. Sometimes they work.</>,
   subline: (
@@ -64,7 +64,7 @@ const home = {
 
 const about = {
   label: "About",
-  title: "rimmi | about",
+  title: "Rimmi | About",
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
@@ -96,7 +96,7 @@ const about = {
     experiences: [
       {
         company: "Pakistan Young Innovative Minds (PYIMS)",
-        timeframe: "Feb 2024 – Present",
+        timeframe: "Dec 2024 – Present",
         role: "Paid Web Development Intern",
         achievements: [
           <>Redesigned and implemented key sections of the PYIMS website using HTML, CSS, and JavaScript.</>,
@@ -108,10 +108,10 @@ const about = {
       {
         company: "TechGirls (U.S. Department of State Exchange Program)",
         timeframe: "Jul – Aug 2024",
-        role: "Selected Participant & Project Lead",
+        role: "Selected Participant",
         achievements: [
           <>Completed certification at Virginia Tech in Automated Systems Using Microprocessors (ASUM).</>,
-          <>Led a multicultural team to design a flood detection and mitigation system inspired by the 2022 Pakistan floods.</>,
+          <>Worked a multicultural team to design a flood detection and mitigation system inspired by the 2022 Pakistan floods.</>,
           <>Founded ‘Learn. Tinker. Innovate.’ to host Arduino and TinkerCAD workshops encouraging girls in STEM.</>,
         ],
         images: [],
@@ -171,7 +171,7 @@ const about = {
   
 const blog = {
   label: "Blog",
-  title: "rimmi | blog",
+  title: "Rimmi | Blog",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
@@ -179,7 +179,7 @@ const blog = {
 
 const work = {
   label: "Work",
-  title: "rimmi | work",
+  title: "Rimmi | Work",
   description: `Design and dev projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
@@ -187,7 +187,7 @@ const work = {
 
 const gallery = {
   label: "Gallery",
-  title: "rimmi | gallery",
+  title: "Rimmi | Gallery",
   headline: <>I take photos.</>,
   images: [
     {
