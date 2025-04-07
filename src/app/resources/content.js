@@ -198,6 +198,7 @@ const gallery = {
   label: "Gallery",
   title: "Rimmi | Gallery",
   headline: <>I take photos.</>,
+  hidden: true, // 👈 Add this lin
   images: [
     {
       src: "/images/gallery/img-01.jpg",
