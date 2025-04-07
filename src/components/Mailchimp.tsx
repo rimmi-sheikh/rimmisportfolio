@@ -1,7 +1,21 @@
 "use client";
 
 import { mailchimp } from "@/app/resources";
-import { Heading, Text, Background, Column } from "@/once-ui/components";
+import { Heading, Text, Background, Column, InlineCode } from "@/once-ui/components";
+import { useEffect, useState } from "react";
+
+const randomThoughts = [
+  "Why do breadboards never stay flat?",
+  "My Arduino just blinked once and stopped—respect.",
+  "Still thinking about that spaghetti bridge collapse.",
+  "That one sensor box project? Still judging the air.",
+  "3D modeled something weird again. Felt cute.",
+  "Hover effects are my love language.",
+  "TechGirls project still lives rent-free in my brain.",
+  "Circuits really said 'no' today.",
+  "Tried to fix a bug—made it worse. Classic.",
+  "Sometimes things work. It's unsettling."
+];
 
 type NewsletterProps = {
   display: boolean;
@@ -10,6 +24,13 @@ type NewsletterProps = {
 };
 
 export const Mailchimp = ({ newsletter }: { newsletter: NewsletterProps }) => {
+  const [randomQuote, setRandomQuote] = useState<string>("");
+
+  useEffect(() => {
+    const newQuote = randomThoughts[Math.floor(Math.random() * randomThoughts.length)];
+    setRandomQuote(newQuote);
+  }, []); // Empty dependency array ensures it runs only once on mount
+
   return (
     <Column
       overflow="hidden"
@@ -83,6 +104,9 @@ export const Mailchimp = ({ newsletter }: { newsletter: NewsletterProps }) => {
         onBackground="neutral-medium"
       >
         {newsletter.description}
+        <br />
+        <br />
+        Currently thinking: <InlineCode>{randomQuote}</InlineCode>
       </Text>
     </Column>
   );
