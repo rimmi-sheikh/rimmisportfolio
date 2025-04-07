@@ -14,9 +14,13 @@
   flex-shrink: 0;
   margin: 0;
 
-  /* Magic Colors */
   --enchantment-color: #9370DB;
   --enchantment-glow: 0 0 15px var(--enchantment-color);
+
+  @media (max-width: 768px) {
+    width: 180px;
+    height: 180px;
+  }
 }
 
 .spellbook {
@@ -48,7 +52,6 @@
   }
 }
 
-/* Hover Effects */
 .spellbook-container:hover {
   .spellbook {
     animation: float 2s ease-in-out infinite;
@@ -65,7 +68,6 @@
   }
 }
 
-/* Magic Particles */
 .magic-particles {
   position: absolute;
   top: 0;
@@ -81,7 +83,6 @@
   z-index: -1;
 }
 
-/* Tooltip Text */
 .hover-text {
   position: absolute;
   bottom: -1.5rem;
@@ -95,10 +96,9 @@
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* Animations */
+/* ===== Animations ===== */
 @keyframes float {
-  0%,
-  100% {
+  0%, 100% {
     transform: translateY(0) rotate(-5deg);
   }
   50% {
@@ -114,8 +114,7 @@
   10% {
     opacity: 0.8;
   }
-  20%,
-  100% {
+  20%, 100% {
     opacity: 0;
   }
 }
