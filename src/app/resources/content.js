@@ -14,13 +14,13 @@ const person = {
 
 const newsletter = {
   display: true,
-  title: <>Not a Newsletter</>,
+  title: <>Rimmi's Rambles</>,
   description: (
     <>
-      This isn’t a newsletter. Just a small space to share random thoughts, projects that didn’t fall apart,
-      or things I did that actually worked. 
+      Welcome to Rimmi’s Rambles: an unfiltered stream of thoughts no one asked for, but here we are.
+      Failed projects, weird bugs, and occasional success stories—if you can call them that.
       <br />
-      Refresh the page—something different might show up. Like a lucky dip. But nerdier.
+      Refresh for a new one. Or don’t. It’s not like the code’s going anywhere.
     </>
   ),
 };
