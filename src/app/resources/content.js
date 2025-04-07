@@ -21,28 +21,9 @@ const newsletter = {
       or things I did that actually worked. 
       <br />
       Refresh the page—something different might show up. Like a lucky dip. But nerdier.
-      <br />
-      <br />
-      Currently thinking: <InlineCode>
-        {
-          [
-            "Why do breadboards never stay flat?",
-            "My Arduino just blinked once and stopped—respect.",
-            "Still thinking about that spaghetti bridge collapse.",
-            "That one sensor box project? Still judging the air.",
-            "3D modeled something weird again. Felt cute.",
-            "Hover effects are my love language.",
-            "TechGirls project still lives rent-free in my brain.",
-            "Circuits really said 'no' today.",
-            "Tried to fix a bug—made it worse. Classic.",
-            "Sometimes things work. It's unsettling."
-          ][Math.floor(Math.random() * 10)]
-        }
-      </InlineCode>
     </>
   ),
 };
-
 
 const social = [
   // Links are automatically displayed.
