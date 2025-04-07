@@ -58,7 +58,7 @@ const home = {
       <div className="spellbook-container">
         <img src="/images/enchanted-book.png" alt="Enchanted Book" className="spellbook" />
         <div className="magic-particles"></div>
-        <div className="hover-text">an example of something i did that worked 😁</div>
+        <div className="hover-text"></div>
       </div>
     </div>
   ),  
