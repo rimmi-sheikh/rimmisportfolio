@@ -52,7 +52,16 @@ const home = {
   label: "home",
   title: `Rimmis Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>I do things. Sometimes they work.</>,
+  headline: (
+    <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
+      <div>I do things.<br />Sometimes they work.</div>
+      <div className="spellbook-container">
+        <img src="/images/enchanted-book.png" alt="Enchanted Book" className="spellbook" />
+        <div className="magic-particles"></div>
+        <div className="hover-text">an example of something i did that worked 😁</div>
+      </div>
+    </div>
+  ),  
   subline: (
     <>
       I'm <InlineCode>Rimmal</InlineCode>—A Level student, tech tinkerer, and frequent victim of my own ideas. Based in <InlineCode>Lahore, Pakistan</InlineCode>, I like <InlineCode>engineering</InlineCode> things that occasionally function, <InlineCode>3D model concepts</InlineCode> no one asked for, and negotiate with <InlineCode>circuits</InlineCode> like they owe me money. 
