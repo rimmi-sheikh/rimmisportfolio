@@ -94,7 +94,7 @@ const about = {
     description: (
       <>
       I am an engineering enthusiast with a passion for electrical systems, environmental technology, 
-      with a surprising fondness for bridges (made of cardboard, spaghetti, anything solid really). I merge hardware, AI, and sustainability to create 
+      with a surprising fondness for bridges (made of cardboard, spaghetti, or anything solid really). I merge hardware, AI, and sustainability to create 
       impactful solutions—from air quality monitoring to flood detection systems. Whether I'm debugging code 
       or building a car chassis from scratch, my work bridges the gap between practicality and ingenuity—
       sometimes literally.
