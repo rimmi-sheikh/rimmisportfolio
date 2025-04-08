@@ -66,7 +66,8 @@ const home = {
   ),  
   subline: (
     <>
-      I'm <InlineCode>Rimmal</InlineCode>—A Level student, tech tinkerer, and frequent victim of my own ideas. Based in <InlineCode>Lahore, Pakistan</InlineCode>, I like <InlineCode>engineering</InlineCode> things that occasionally function, making questionable <InlineCode>3D model concepts</InlineCode>, and negotiating with <InlineCode>circuits</InlineCode> like they owe me money. 
+      I'm <InlineCode>Rimmal</InlineCode>—A Level student, tech tinkerer, and frequent victim of my own ideas. 
+      <br/> Based in <InlineCode>Lahore, Pakistan</InlineCode>, I like <InlineCode>engineering</InlineCode> things that occasionally function, making questionable <InlineCode>3D model concepts</InlineCode>, and negotiating with <InlineCode>circuits</InlineCode> like they owe me money. 
       <br/> If it involves code, design, or an unnecessary amount of overcomplication, I’m probably in. 
       <br/> <InlineCode>Welcome to my portfolio 👾</InlineCode>—try not to trip over the unfinished projects or half-baked ideas.
     </>
