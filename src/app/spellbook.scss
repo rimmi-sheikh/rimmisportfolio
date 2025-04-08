@@ -19,11 +19,9 @@
 
   @media (max-width: 768px) {
     .spellbook-container {
-      width: 100px;
-      height: 100px;
+      display: none;
     }
-  }
-  
+  }  
 }
 
 .spellbook {
