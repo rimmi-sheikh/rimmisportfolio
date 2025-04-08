@@ -2,4 +2,8 @@
     font-size: 80%;
     line-height: 125%;
     vertical-align: middle;
-}
+  
+    white-space: normal;     /* allow wrapping */
+    word-break: break-word;  /* break long text if needed */
+  }
+  
