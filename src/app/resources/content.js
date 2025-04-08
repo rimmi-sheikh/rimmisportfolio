@@ -55,24 +55,23 @@ const home = {
   title: `Rimmis Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: (
-    <div className="flex items-center gap-8 sm:flex-col sm:text-center sm:gap-4">
-      <div className="headline-text">I do things.<br />Sometimes they work.</div>
+    <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
+      <div>I do things.<br />Sometimes they work.</div>
       <div className="spellbook-container">
         <img src="/images/enchanted-book.png" alt="Enchanted Book" className="spellbook" />
         <div className="magic-particles"></div>
         <div className="hover-text"></div>
       </div>
     </div>
-  ),
-  
+  ),  
   subline: (
-    <div className="subline-text sm:text-center sm:px-4">
+    <>
       I'm <InlineCode>Rimmal</InlineCode>—A Level student, tech tinkerer, and frequent victim of my own ideas. 
       <br/> Based in <InlineCode>Lahore, Pakistan</InlineCode>, I like <InlineCode>engineering</InlineCode> things that occasionally function, making questionable <InlineCode>3D model concepts</InlineCode>, and negotiating with <InlineCode>circuits</InlineCode> like they owe me money. 
       <br/> If it involves code, design, or an unnecessary amount of overcomplication, I’m probably in. 
       <br/> <InlineCode>Welcome to my portfolio 👾</InlineCode>—try not to trip over the unfinished projects or half-baked ideas.
-    </div>
-  ),  
+    </>
+  ),
 };
 
 const about = {
