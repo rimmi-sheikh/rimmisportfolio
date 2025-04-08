@@ -4,6 +4,10 @@
   max-width: 65ch;
   padding: 0;
   text-align: left;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 }
 
 /* ===== ENCHANTED BOOK STYLES ===== */
@@ -18,8 +22,9 @@
   --enchantment-glow: 0 0 15px var(--enchantment-color);
 
   @media (max-width: 768px) {
-    width: 180px;
-    height: 180px;
+    order: 2; // Makes sure it's below the text
+    width: 220px;
+    height: 220px;
   }
 }
 
@@ -127,7 +132,7 @@
 
   @media (max-width: 768px) {
     flex-direction: column;
-    gap: 1.5rem;
+    align-items: center;
   }
 }
 
