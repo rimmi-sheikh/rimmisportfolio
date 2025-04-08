@@ -93,10 +93,10 @@ const about = {
     title: "Introduction",
     description: (
       <>
-      Rimmal is an engineering enthusiast with a passion for electrical systems, environmental technology, 
-      and a surprising fondness for spaghetti bridges. She merges hardware, AI, and sustainability to create 
-      impactful solutions—from air quality monitoring to flood detection systems. Whether she’s debugging code 
-      or building a car chassis from scratch, Rimmal’s work bridges the gap between practicality and ingenuity—
+      I am an engineering enthusiast with a passion for electrical systems, environmental technology, 
+      with a surprising fondness for bridges (made of cardboard, spaghetti, anything solid really). I merge hardware, AI, and sustainability to create 
+      impactful solutions—from air quality monitoring to flood detection systems. Whether I'm debugging code 
+      or building a car chassis from scratch, my work bridges the gap between practicality and ingenuity—
       sometimes literally.
     </>
     ),
@@ -108,7 +108,7 @@ const about = {
       {
         company: "Pakistan Young Innovative Minds (PYIMS)",
         timeframe: "Dec 2024 – Present",
-        role: "Paid Web Development Intern",
+        role: "Web Development Intern",
         achievements: [
           <>Redesigned and implemented key sections of the PYIMS website using HTML, CSS, and JavaScript.</>,
           <>Collaborated with the design team to align site UI with organizational branding and accessibility goals.</>,
@@ -123,7 +123,7 @@ const about = {
         achievements: [
           <>Completed certification at Virginia Tech in Automated Systems Using Microprocessors (ASUM).</>,
           <>Worked a multicultural team to design a flood detection and mitigation system inspired by the 2022 Pakistan floods.</>,
-          <>Founded ‘Learn. Tinker. Innovate.’ to host Arduino and TinkerCAD workshops encouraging girls in STEM.</>,
+          <>Founded ‘Learn. Tinker. Innovate.’ to host a Arduino and TinkerCAD workshop encouraging girls in STEM.</>,
         ],
         images: [],
       },
