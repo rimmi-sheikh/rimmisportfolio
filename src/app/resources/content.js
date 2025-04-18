@@ -1,4 +1,5 @@
 import { InlineCode } from "@/once-ui/components";
+import styles from './home.module.scss';
 
 const person = {
   firstName: "Rimmal",
@@ -55,7 +56,7 @@ const home = {
   title: `Rimmis Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: (
-    <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
+    <div className={styles.homepageHeadline}>
       <div>I do things.<br />Sometimes they work.</div>
       <div className="spellbook-container">
         <img src="/images/enchanted-book.png" alt="Enchanted Book" className="spellbook" />
