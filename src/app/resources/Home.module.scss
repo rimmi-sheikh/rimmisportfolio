@@ -1,0 +1,10 @@
+/* in styles/globals.scss or similar */
+@media (--s) {
+    .homepage-headline > div:first-child {
+      text-align: center;
+    }
+  
+    .homepage-headline .spellbook-container {
+      align-self: center;
+    }
+}
