@@ -1,5 +1,5 @@
 import { InlineCode } from "@/once-ui/components";
-import styles from './home.module.scss';
+import styles from './Home.module.scss';
 
 const person = {
   firstName: "Rimmal",
