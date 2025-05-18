@@ -9,8 +9,8 @@ const person = {
   },
   role: "TechGirls Alumna • Aspiring Engineer • Web Developer",
   avatar: "/images/avatar.png",
-  location: "Asia/Karachi", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Urdu"], // optional: Leave the array empty if you don't want to display languages
+  location: "Asia/Karachi", // 
+  languages: ["English", "Urdu"], // 
 };
 
 const newsletter = {
@@ -119,7 +119,7 @@ const about = {
         images: [],
       },
       {
-        company: "TechGirls (U.S. Department of State Exchange Program)",
+        company: "TechGirls (U.S. Department of State Exchange)",
         timeframe: "Jul – Aug 2024",
         role: "Selected Participant",
         achievements: [
