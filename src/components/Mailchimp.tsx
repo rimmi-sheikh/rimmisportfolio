@@ -107,7 +107,7 @@ export const Mailchimp = ({ newsletter }: { newsletter: NewsletterProps }) => {
         {newsletter.description}
         <br />
         <br />
-        Currently thinking 😁: <InlineCode>{randomQuote}</InlineCode>
+        Currently thinking: <InlineCode>{randomQuote}</InlineCode>
       </Text>
     </Column>
   );
