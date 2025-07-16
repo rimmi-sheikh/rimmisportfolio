@@ -5,17 +5,18 @@ import { Heading, Text, Background, Column, InlineCode } from "@/once-ui/compone
 import { useEffect, useState } from "react";
 
 const randomThoughts = [
-  "Why do breadboards never stay flat?",
-  "My Arduino just blinked once and stopped—respect.",
-  "Still thinking about that spaghetti bridge collapse.",
-  "That one sensor box project? Still judging the air.",
-  "3D modeled something weird again. Felt cute.",
-  "Hover effects are my love language.",
-  "TechGirls project still lives rent-free in my brain.",
-  "Circuits really said 'no' today.",
-  "Tried to fix a bug—made it worse. Classic.",
-  "Sometimes things work. It's unsettling."
+  "I don’t trust beams that aren’t part of a truss.",
+  "If it stains your hands, it’s probably going to look great on paper.",
+  "I still think about that Arduino that stopped working... then didn’t.",
+  "Some sensors just need to be spoken to kindly.",
+  "Servos have the emotional range of a damp paper towel, but I still love them.",
+  "Bridges made from spaghetti shouldn’t hold that much weight, but they did.",
+  "I keep adding LEDs to things like that’ll fix me.",
+  "Most of my code runs on hope and serial.println().",
+  "Blender is just Minecraft on caffeine if you think about it.",
+  "Redstone logic makes more sense than real-world wiring. I said what I said."
 ];
+
 
 type NewsletterProps = {
   display: boolean;

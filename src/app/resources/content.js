@@ -19,7 +19,7 @@ const newsletter = {
   description: (
     <>
       Welcome to Rimmi’s Rambles: an unfiltered stream of thoughts no one asked for, but here we are.
-      Failed projects, weird bugs, and occasional success stories—if you can call them that.
+      Failed projects, weird bugs, and occasional success stories - if you can call them that.
       <br />
       Refresh for a new one. Or don’t. It’s not like the code’s going anywhere.
     </>
