@@ -57,7 +57,7 @@ const home = {
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: (
     <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
-      <div>I do things.<br />Sometimes they work.</div>
+      <div>I can center a div.<br /> (Mostly) </div>
       <div className="spellbook-container">
         <img src="/images/enchanted-book.png" alt="Enchanted Book" className="spellbook" />
         <div className="magic-particles"></div>
@@ -70,7 +70,7 @@ const home = {
     I’m Rimmal, an <InlineCode>A Level student</InlineCode> from Lahore, Pakistan who spends too much time debugging <InlineCode>circuits</InlineCode> and pretending my <InlineCode>3D models</InlineCode> have structural integrity.
     <br />I like working with <InlineCode>hardware</InlineCode>, <InlineCode>environmental tech</InlineCode>, and ideas that require five more <InlineCode>sensors</InlineCode> than necessary.
     <br />Sometimes I design flood mitigation systems. Sometimes I just convince an Arduino to wave.
-    <br />Welcome to my portfolio 👾.
+    <br /><InlineCode>Welcome to my portfolio 👾.</InlineCode>
     <br />This is where I keep the projects that survived testing, the ones still in testing, and the ones I’ll fix eventually.
   </>
   ),
