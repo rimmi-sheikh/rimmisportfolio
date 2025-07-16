@@ -67,12 +67,12 @@ const home = {
   ),  
   subline: (
     <>
-      I’m Rimmal, an <InlineCode>A Level student</InlineCode> from Lahore, Pakistan who spends too much time debugging <InlineCode>circuits</InlineCode> and pretending my <InlineCode>3D models</InlineCode> have structural integrity.
-      <br>I like working with <InlineCode>hardware</InlineCode>, <InlineCode>environmental tech</InlineCode>, and ideas that require five more <InlineCode>sensors</InlineCode> than necessary.
-      <br>Sometimes I design flood mitigation systems. Sometimes I just convince an Arduino to wave.
-      </br><InlineCode>Welcome to my portfolio 👾.</InlineCode>
-      </br>This is where I keep the projects that survived testing, the ones still in testing, and the ones I’ll fix eventually.
-    </>
+    I’m Rimmal, an <InlineCode>A Level student</InlineCode> from Lahore, Pakistan who spends too much time debugging <InlineCode>circuits</InlineCode> and pretending my <InlineCode>3D models</InlineCode> have structural integrity.
+    <br />I like working with <InlineCode>hardware</InlineCode>, <InlineCode>environmental tech</InlineCode>, and ideas that require five more <InlineCode>sensors</InlineCode> than necessary.
+    <br />Sometimes I design flood mitigation systems. Sometimes I just convince an Arduino to wave.
+    <br />Welcome to my portfolio 👾.
+    <br />This is where I keep the projects that survived testing, the ones still in testing, and the ones I’ll fix eventually.
+  </>
   ),
 };
 
