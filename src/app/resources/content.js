@@ -67,10 +67,11 @@ const home = {
   ),  
   subline: (
     <>
-      I'm <InlineCode>Rimmal</InlineCode>—A Level student, tech tinkerer, and frequent victim of my own ideas. 
-      <br/> Based in <InlineCode>Lahore, Pakistan</InlineCode>, I like <InlineCode>engineering</InlineCode> things that occasionally function, making questionable <InlineCode>3D model concepts</InlineCode>, and negotiating with <InlineCode>circuits</InlineCode> like they owe me money. 
-      <br/> If it involves code, design, or an unnecessary amount of overcomplication, I’m probably in. 
-      <br/> <InlineCode>Welcome to my portfolio 👾</InlineCode>—try not to trip over the unfinished projects or half-baked ideas.
+      I’m Rimmal, an <InlineCode>A Level student</InlineCode> from Lahore, Pakistan who spends too much time debugging <InlineCode>circuits</InlineCode> and pretending my <InlineCode>3D models</InlineCode> have structural integrity.
+      <br>I like working with <InlineCode>hardware</InlineCode>, <InlineCode>environmental tech</InlineCode>, and ideas that require five more <InlineCode>sensors</InlineCode> than necessary.
+      <br>Sometimes I design flood mitigation systems. Sometimes I just convince an Arduino to wave.
+      </br><InlineCode>Welcome to my portfolio 👾.</InlineCode>
+      </br>This is where I keep the projects that survived testing, the ones still in testing, and the ones I’ll fix eventually.
     </>
   ),
 };
