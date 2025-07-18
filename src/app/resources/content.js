@@ -1,5 +1,5 @@
 import { InlineCode } from "@/once-ui/components";
-
+import ModelViewer from '@/components/ModelViewer';
 
 const person = {
   firstName: "Rimmal",
@@ -57,15 +57,31 @@ const home = {
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: (
     <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
-      <div>I can center a div.<br /> (Most of the time) </div>
+      <div>I can center a div.<br /> (Most of the time)</div>
     </div>
   ),  
   subline: (
-    <>
-    Hi, I’m Rimmal, an <InlineCode>A Level student</InlineCode> from Lahore, Pakistan, who spends too much time debugging <InlineCode>circuits</InlineCode> and pretending that her <InlineCode>3D models</InlineCode> have structural integrity.
-    <br />I like working with <InlineCode>hardware</InlineCode>, <InlineCode>environmental tech</InlineCode>, and ideas that require five more <InlineCode>sensors</InlineCode> than necessary.
-    <br /><InlineCode>Welcome to my portfolio 👾.</InlineCode>
-  </>
+    <div style={{ 
+      display: 'flex', 
+      gap: '2rem', 
+      alignItems: 'center',
+      flexWrap: 'wrap' 
+    }}>
+      <div style={{ flex: 1, minWidth: '300px' }}>
+        Hi, I'm Rimmal, an <InlineCode>A Level student</InlineCode> from Lahore, Pakistan, who spends too much time debugging <InlineCode>circuits</InlineCode> and pretending that her <InlineCode>3D models</InlineCode> have structural integrity.
+        <br />I like working with <InlineCode>hardware</InlineCode>, <InlineCode>environmental tech</InlineCode>, and ideas that require five more <InlineCode>sensors</InlineCode> than necessary.
+        <br /><InlineCode>Welcome to my portfolio 👾.</InlineCode>
+      </div>
+      <div style={{ 
+        width: '300px', 
+        height: '300px',
+        borderRadius: '12px',
+        overflow: 'hidden',
+        boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
+      }}>
+        <ModelViewer />
+      </div>
+    </div>
   ),
 };
 
