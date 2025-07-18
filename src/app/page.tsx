@@ -110,7 +110,7 @@ export default function Home() {
         <Flex fillWidth gap="24" mobileDirection="column">
           {/* Centered Heading */}
           <Flex flex={1} horizontal="center">
-            <Heading as="h2" variant="display-strong-xs" wrap="balance">
+            <Heading as="h2" variant="display-strong-xs">
               <InlineCode>Peek Behind the Code</InlineCode>
             </Heading>
           </Flex>
