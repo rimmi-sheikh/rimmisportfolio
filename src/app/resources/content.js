@@ -57,33 +57,15 @@ const home = {
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: (
     <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
-      <div>I can center a div.<br /> (Most of the time)</div>
+      <div>I can center a div.<br /> (Most of the time) </div>
     </div>
   ),  
   subline: (
-    <div style={{
-      display: 'flex',
-      gap: '3rem',
-      alignItems: 'center',
-      flexWrap: 'wrap',
-      justifyContent: 'space-between'
-    }}>
-      <div style={{ flex: 1, minWidth: '300px' }}>
-        Hi, I'm Rimmal, an <InlineCode>A Level student</InlineCode> from Lahore, Pakistan, who spends too much time debugging <InlineCode>circuits</InlineCode> and pretending that her <InlineCode>3D models</InlineCode> have structural integrity.
-        <br />I like working with <InlineCode>hardware</InlineCode>, <InlineCode>environmental tech</InlineCode>, and ideas that require five more <InlineCode>sensors</InlineCode> than necessary.
-        <br /><InlineCode>Welcome to my portfolio 👾.</InlineCode>
-      </div>
-      <div style={{
-        width: '350px',
-        height: '350px',
-        position: 'relative',
-        borderRadius: '12px',
-        overflow: 'hidden',
-        backgroundColor: '#f5f5f5' // Fallback color
-      }}>
-        <ModelViewer />
-      </div>
-    </div>
+    <>
+    Hi, I’m Rimmal, an <InlineCode>A Level student</InlineCode> from Lahore, Pakistan, who spends too much time debugging <InlineCode>circuits</InlineCode> and pretending that her <InlineCode>3D models</InlineCode> have structural integrity.
+    <br />I like working with <InlineCode>hardware</InlineCode>, <InlineCode>environmental tech</InlineCode>, and ideas that require five more <InlineCode>sensors</InlineCode> than necessary.
+    <br /><InlineCode>Welcome to my portfolio 👾.</InlineCode>
+  </>
   ),
 };
 
