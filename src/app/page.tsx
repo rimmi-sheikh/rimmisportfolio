@@ -111,7 +111,7 @@ export default function Home() {
           {/* Centered Heading */}
           <Flex flex={1} horizontal="center">
             <Heading as="h2" variant="display-strong-xs">
-              <InlineCode>Peek Behind the Code</InlineCode>
+              <InlineCode>Latest Peeks Behind the Code</InlineCode>
             </Heading>
           </Flex>
           

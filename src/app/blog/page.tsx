@@ -1,4 +1,4 @@
-import { Column, Flex, Heading } from "@/once-ui/components";
+import { Column, Flex, Heading, InlineCode } from "@/once-ui/components";
 import { Mailchimp } from "@/components";
 import { Posts } from "@/components/blog/Posts";
 import { baseURL } from "@/app/resources";
@@ -59,7 +59,7 @@ export default function Blog() {
         }}
       />
       <Heading marginBottom="l" variant="display-strong-s">
-        {blog.title}
+        <InlineCode>Peek Behind the Code</InlineCode>
       </Heading>
       <Column fillWidth flex={1}>
         <Posts range={[1, 3]} thumbnail />
