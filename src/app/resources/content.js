@@ -57,7 +57,7 @@ const home = {
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: (
     <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
-      <div><InlineCode>I can center a div.</InlineCode><br /> (Most of the time) </div>
+      <div><InlineCode>I can center a div.</InlineCode><br /> <InlineCode>(Most of the time)</InlineCode> </div>
     </div>
   ),  
   subline: (
