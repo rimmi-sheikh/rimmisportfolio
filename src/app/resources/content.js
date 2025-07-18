@@ -53,7 +53,7 @@ const social = [
 
 const home = { 
   label: "home",
-  title: `Rimmis Portfolio`,
+  title: `Rimmi's Space`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: (
     <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
