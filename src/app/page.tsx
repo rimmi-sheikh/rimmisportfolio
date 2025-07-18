@@ -108,13 +108,16 @@ export default function Home() {
       </RevealFx>
       {routes["/blog"] && (
         <Flex fillWidth gap="24" mobileDirection="column">
-          <Flex flex={1} paddingLeft="l">
+          {/* Centered Heading */}
+          <Flex flex={1} horizontal="center">
             <Heading as="h2" variant="display-strong-xs" wrap="balance">
-              <InlineCode>Peek Behind</InlineCode> <InlineCode>the Code</InlineCode>
+              <InlineCode>Peek Behind the Code</InlineCode>
             </Heading>
           </Flex>
+          
+          {/* Show 2 latest posts (original behavior) */}
           <Flex flex={3} paddingX="20">
-            <Posts range={[1, 2]} columns="2" />
+            <Posts range={[1, 2]} columns="2" /> {/* Back to original 2 posts */}
           </Flex>
         </Flex>
       )}
