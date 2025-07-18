@@ -93,7 +93,7 @@ export default function Home() {
               id="work"
               data-border="rounded"
               href="/work"
-              variant="secondary" // Changed to primary for different color
+              variant="primary" // Changed to primary for different color
               size="m"         // Same size
               arrowIcon        // Same arrow
             >
