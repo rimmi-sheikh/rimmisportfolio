@@ -74,7 +74,9 @@ export default function Home() {
               {home.subline}
             </Text>
           </RevealFx>
-          <RevealFx translateY="12" delay={0.4} horizontal="start">
+         <RevealFx translateY="12" delay={0.4} horizontal="start">
+          <Flex gap="m"> {/* Added Flex container for side-by-side buttons */}
+            {/* Existing About Me button */}
             <Button
               id="about"
               data-border="rounded"
@@ -83,11 +85,22 @@ export default function Home() {
               size="m"
               arrowIcon
             >
-              <Flex gap="8" vertical="center">
-                <Text>About Me</Text>
-              </Flex>
+              <Text>About Me</Text>
             </Button>
-          </RevealFx>
+
+            {/* New Work button - same size but different color */}
+            <Button
+              id="work"
+              data-border="rounded"
+              href="/work"
+              variant="primary" // Changed to primary for different color
+              size="m"         // Same size
+              arrowIcon        // Same arrow
+            >
+              <Text>My Work</Text>
+            </Button>
+          </Flex>
+        </RevealFx>
         </Column>
       </Column>
       <RevealFx translateY="16" delay={0.6}>
