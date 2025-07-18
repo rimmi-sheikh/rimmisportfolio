@@ -58,7 +58,7 @@ export default function Blog() {
           }),
         }}
       />
-      <Heading marginBottom="l" variant="display-strong-s">
+      <Heading marginBottom="l" variant="display-strong-m">
         <InlineCode>Peek Behind the Code</InlineCode>
       </Heading>
       <Column fillWidth flex={1}>
