@@ -1,4 +1,5 @@
 import React from "react";
+import PickaxeModel from "@/components/about/PickaxeModel";
 
 import { Heading, Flex, Text, Button, Avatar, RevealFx, Arrow, Column, InlineCode } from "@/once-ui/components";
 import { Projects } from "@/components/work/Projects";
@@ -63,45 +64,55 @@ export default function Home() {
         }}
       />
       <Column fillWidth paddingY="l" gap="m">
-        <Column maxWidth="s">
-          <RevealFx translateY="4" fillWidth horizontal="start" paddingBottom="m">
-            <Heading wrap="balance" variant="display-strong-l">
-              {home.headline}
-            </Heading>
-          </RevealFx>
-          <RevealFx translateY="8" delay={0.2} fillWidth horizontal="start" paddingBottom="m">
-            <Text wrap="balance" onBackground="neutral-weak" variant="heading-default-xl">
-              {home.subline}
-            </Text>
-          </RevealFx>
-         <RevealFx translateY="12" delay={0.4} horizontal="start">
-          <Flex gap="m"> {/* Added Flex container for side-by-side buttons */}
-            {/* Existing About Me button */}
-            <Button
-              id="about"
-              data-border="rounded"
-              href="/about"
-              variant="secondary"
-              size="m"
-              arrowIcon
-            >
-              <Text>About Me</Text>
-            </Button>
+        <Flex fillWidth gap="24" mobileDirection="column">
+          {/* Text Content (Left Side) - shown on all screens */}
+          <Column maxWidth="s">
+            <RevealFx translateY="4" fillWidth horizontal="start" paddingBottom="m">
+              <Heading wrap="balance" variant="display-strong-l">
+                {home.headline}
+              </Heading>
+            </RevealFx>
+            <RevealFx translateY="8" delay={0.2} fillWidth horizontal="start" paddingBottom="m">
+              <Text wrap="balance" onBackground="neutral-weak" variant="heading-default-xl">
+                {home.subline}
+              </Text>
+            </RevealFx>
+            <RevealFx translateY="12" delay={0.4} horizontal="start">
+              <Flex gap="m">
+                <Button
+                  id="about"
+                  data-border="rounded"
+                  href="/about"
+                  variant="secondary"
+                  size="m"
+                  arrowIcon
+                >
+                  <Text>About Me</Text>
+                </Button>
+                <Button
+                  id="work"
+                  data-border="rounded"
+                  href="/work"
+                  variant="primary"
+                  size="m"
+                  arrowIcon
+                >
+                  <Text>My Work</Text>
+                </Button>
+              </Flex>
+            </RevealFx>
+          </Column>
 
-            {/* New Work button - same size but different color */}
-            <Button
-              id="work"
-              data-border="rounded"
-              href="/work"
-              variant="primary" // Changed to primary for different color
-              size="m"         // Same size
-              arrowIcon        // Same arrow
-            >
-              <Text>My Work</Text>
-            </Button>
-          </Flex>
-        </RevealFx>
-        </Column>
+          {/* Pickaxe Model (Right Side) - hidden on mobile */}
+          <RevealFx 
+            translateY="4" 
+            delay={0.1} 
+            horizontal="end"
+            className="hidden md:block" // This hides it on mobile
+          >
+            <PickaxeModel className="h-[300px] w-[300px] md:h-[400px] md:w-[400px]" />
+          </RevealFx>
+        </Flex>
       </Column>
       <RevealFx translateY="16" delay={0.6}>
         <Projects range={[2, 2]} />
