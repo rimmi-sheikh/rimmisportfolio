@@ -61,23 +61,25 @@ const home = {
     </div>
   ),  
   subline: (
-    <div style={{ 
-      display: 'flex', 
-      gap: '2rem', 
+    <div style={{
+      display: 'flex',
+      gap: '3rem',
       alignItems: 'center',
-      flexWrap: 'wrap' 
+      flexWrap: 'wrap',
+      justifyContent: 'space-between'
     }}>
       <div style={{ flex: 1, minWidth: '300px' }}>
         Hi, I'm Rimmal, an <InlineCode>A Level student</InlineCode> from Lahore, Pakistan, who spends too much time debugging <InlineCode>circuits</InlineCode> and pretending that her <InlineCode>3D models</InlineCode> have structural integrity.
         <br />I like working with <InlineCode>hardware</InlineCode>, <InlineCode>environmental tech</InlineCode>, and ideas that require five more <InlineCode>sensors</InlineCode> than necessary.
         <br /><InlineCode>Welcome to my portfolio 👾.</InlineCode>
       </div>
-      <div style={{ 
-        width: '300px', 
-        height: '300px',
+      <div style={{
+        width: '350px',
+        height: '350px',
+        position: 'relative',
         borderRadius: '12px',
         overflow: 'hidden',
-        boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
+        backgroundColor: '#f5f5f5' // Fallback color
       }}>
         <ModelViewer />
       </div>
