@@ -18,7 +18,7 @@ function MinecraftPickaxe({ scale = 0.2 }) {
   })
 
   return (
-    <group ref={group} scale={[scale, scale, scale]} position={[0, -1, 0]}>
+    <group ref={group} scale={[scale, scale, scale]} position={[0, 0, 0]}>
       <primitive object={scene} />
     </group>
   )
