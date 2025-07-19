@@ -63,7 +63,7 @@ export default function Home() {
           }),
         }}
       />
-      <Column fillWidth paddingY="l" gap="m">
+      <Column fillWidth paddingY="l" gap="xs">
         <Flex fillWidth gap="12" mobileDirection="column">
           {/* Text Content (Left Side) - shown on all screens */}
           <Column maxWidth="s">
