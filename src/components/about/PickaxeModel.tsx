@@ -53,7 +53,7 @@ export default function PickaxeModel({ className = "h-[500px] w-[500px]" }) {
           minPolarAngle={Math.PI / 3} 
           maxPolarAngle={Math.PI / 1.5} 
         />
-        <Environment preset="night" />
+        <Environment preset="studio" />
       </Canvas>
     </div>
   )
