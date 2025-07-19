@@ -29,8 +29,8 @@ export default function PickaxeModel({ className = "h-[500px] w-[700px]" }) {
     <div className={`${className} overflow-visible`}>
       <Canvas
         camera={{
-          position: [-2, 0, 8],
-          fov: 35,
+          position: [0, 0, 5],
+          fov: 25,
           near: 0.1,
           far: 1000,
         }}
