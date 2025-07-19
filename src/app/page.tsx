@@ -64,7 +64,7 @@ export default function Home() {
         }}
       />
       <Column fillWidth paddingY="l" gap="m">
-        <Flex fillWidth gap="24" mobileDirection="column">
+        <Flex fillWidth gap="12" mobileDirection="column">
           {/* Text Content (Left Side) - shown on all screens */}
           <Column maxWidth="s">
             <RevealFx translateY="4" fillWidth horizontal="start" paddingBottom="m">
