@@ -5,7 +5,7 @@ import { Canvas, useFrame } from "@react-three/fiber"
 import { Environment, OrbitControls, Float, useGLTF } from "@react-three/drei"
 import type * as THREE from "three"
 
-function MinecraftPickaxe({ scale = 1 }) {
+function MinecraftPickaxe({ scale = 0.2 }) {
   const group = useRef<THREE.Group>(null)
   const { scene } = useGLTF('/models/minecraft_pickaxe.glb') // Update path to your GLB
 
