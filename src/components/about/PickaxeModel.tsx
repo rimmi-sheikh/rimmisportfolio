@@ -24,7 +24,7 @@ function MinecraftPickaxe({ scale = 0.2 }) {
   )
 }
 
-export default function PickaxeModel({ className = "h-[500px] w-[500px]" }) {
+export default function PickaxeModel({ className = "h-[500px] w-[700px]" }) {
   return (
     <div className={`${className} overflow-visible`}>
       <Canvas
@@ -53,7 +53,7 @@ export default function PickaxeModel({ className = "h-[500px] w-[500px]" }) {
           minPolarAngle={Math.PI / 3} 
           maxPolarAngle={Math.PI / 1.5} 
         />
-        <Environment preset="studio" />
+        <Environment preset="dawn" />
       </Canvas>
     </div>
   )
