@@ -110,9 +110,7 @@ export default function Home() {
             horizontal="end"
             className="hidden md:block" // This hides it on mobile
           >
-            <PickaxeModel className="h-[100px] w-[100px] md:h-[150px] md:w-[150px]"
-            scale={0.5}
-             />
+            <PickaxeModel className="h-[50px] w-[50px] md:h-[50px] md:w-[50px]" />
           </RevealFx>
         </Flex>
       </Column>
