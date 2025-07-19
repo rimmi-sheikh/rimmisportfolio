@@ -30,7 +30,7 @@ export default function PickaxeModel({ className = "h-[500px] w-[700px]" }) {
       <Canvas
         camera={{
           position: [0, 0, 5],
-          fov: 25,
+          fov: 40,
           near: 0.1,
           far: 1000,
         }}
