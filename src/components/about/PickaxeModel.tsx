@@ -7,13 +7,13 @@ import type * as THREE from "three"
 
 function MinecraftPickaxe({ scale = 0.2 }) {
   const group = useRef<THREE.Group>(null)
-  const { scene } = useGLTF('/models/minecraft_pickaxe.glb') // Update path to your GLB
+  const { scene } = useGLTF('/models/minecraft_pickaxe.glb')
 
-  // Simple rotation animation
+  // Float-only animation (no rotation)
   useFrame((state) => {
     if (group.current) {
-      group.current.rotation.y = state.clock.getElapsedTime() * 0.2
       group.current.position.y = Math.sin(state.clock.getElapsedTime() * 0.5) * 0.1
+      // Removed rotation.y line
     }
   })
 
@@ -39,7 +39,11 @@ export default function PickaxeModel({ className = "h-[500px] w-[500px]" }) {
         <spotLight position={[5, 5, 5]} angle={0.15} penumbra={1} intensity={1} castShadow />
         <pointLight position={[0, 0, 3]} intensity={0.5} color="#b27ee9" />
         
-        <Float speed={1.5} rotationIntensity={0.2} floatIntensity={0.5}>
+        <Float 
+          speed={1.5} 
+          rotationIntensity={0} // Disables rotation
+          floatIntensity={0.5} // Keeps floating
+        >
           <MinecraftPickaxe scale={0.9} />
         </Float>
 
