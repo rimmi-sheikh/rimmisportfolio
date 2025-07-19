@@ -105,9 +105,9 @@ export default function Home() {
 
           {/* Pickaxe Model (Right Side) - hidden on mobile */}
           <RevealFx 
-            translateY="4" 
+            translateY="2" 
             delay={0.1} 
-            horizontal="end"
+            horizontal="space-evenly"
             className="hidden md:block" // This hides it on mobile
           >
             <PickaxeModel className="h-[50px] w-[50px] md:h-[50px] md:w-[50px]" />
